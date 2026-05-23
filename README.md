@@ -64,7 +64,7 @@ O sistema Clínica VidaPlena foi desenvolvido para resolver esses problemas atra
 
 ---
 
-# ⚙️ Funcionalidades
+#  Funcionalidades
 
 ##  Pacientes
 - Cadastro simples;
