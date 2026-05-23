@@ -1,121 +1,73 @@
 # 🏥 Clínica VidaPlena — Sistema de Gerenciamento Clínico
 
-<div align="center">
+![STATUS](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-blue?style=for-the-badge)
 
-![Java](https://img.shields.io/badge/Java-JDK%2021-orange?style=for-the-badge&logo=openjdk)
-![Status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-blue?style=for-the-badge)
-![Projeto](https://img.shields.io/badge/PROJETO-ACADÊMICO-green?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-Versionamento-black?style=for-the-badge&logo=github)
+## 1. Visão Geral e a Dor
 
-</div>
+Clínicas de pequeno e médio porte frequentemente enfrentam problemas relacionados à organização de pacientes, consultas, atendimentos e controle financeiro quando utilizam processos manuais ou sistemas pouco integrados.
+
+A falta de centralização das informações pode gerar:
+
+- conflitos de horários;
+- perda de dados importantes;
+- lentidão no atendimento;
+- dificuldades no controle financeiro;
+- falhas operacionais.
+
+O sistema **Clínica VidaPlena** foi desenvolvido para resolver esse problema através de uma aplicação Java executada via terminal, simulando o fluxo operacional de uma clínica multidisciplinar.
+
+### O que está sendo resolvido?
+
+- Organização de pacientes;
+- Controle de profissionais;
+- Gerenciamento de consultas;
+- Registro de atendimentos;
+- Controle de pagamentos;
+- Relatórios administrativos.
+
+### Quem sofre com esse problema?
+
+- Clínicas médicas;
+- Secretarias;
+- Recepcionistas;
+- Profissionais da saúde;
+- Administração da clínica.
+
+### Por que isso importa para o negócio?
+
+Um sistema organizado reduz erros operacionais, melhora o atendimento ao paciente e centraliza as informações da clínica em um único fluxo de gerenciamento.
 
 ---
 
-# 📖 Sobre o Projeto
+## 2. Arquitetura e Decisões Técnicas
 
-O **Clínica VidaPlena** é um sistema desenvolvido em **Java** com execução via terminal, criado para simular o funcionamento de uma clínica multidisciplinar.
+O projeto foi construído utilizando apenas conceitos fundamentais da linguagem Java, respeitando integralmente as restrições acadêmicas propostas.
 
-A aplicação permite o gerenciamento completo das principais operações clínicas, incluindo:
+| Camada | Escolha | Por que escolhi isso? | Alternativa considerada | Nota de impacto |
+| --- | --- | --- | --- | --- |
+| Linguagem | Java JDK 21 | Linguagem robusta e fortemente tipada | Python / C | Melhor organização do sistema |
+| Interface | Terminal (Console) | Foco total na lógica de negócio | JavaFX / Swing | Desenvolvimento mais rápido |
+| Persistência | Arrays Fixos | Atender às restrições acadêmicas | ArrayList / Banco de Dados | Exercício de manipulação manual |
+| Estrutura | Programação Orientada a Objetos | Organização modular das entidades | Programação procedural | Melhor separação de responsabilidades |
+| Versionamento | Git + GitHub | Controle de versão e colaboração | Sem versionamento | Rastreabilidade e histórico |
+
+---
+
+## 3. Demonstração
+
+O sistema possui funcionalidades completas de gerenciamento clínico via terminal.
+
+### Fluxos implementados
 
 - Cadastro de pacientes;
 - Cadastro de profissionais;
 - Agendamento de consultas;
+- Cancelamento e remarcação;
 - Registro de atendimentos;
 - Controle de pagamentos;
-- Relatórios operacionais e financeiros.
+- Relatórios gerais.
 
-O projeto foi desenvolvido exclusivamente com conceitos fundamentais da linguagem Java, respeitando todas as restrições acadêmicas propostas pela disciplina.
-
----
-
-# 🎯 Objetivos do Sistema
-
-O sistema foi desenvolvido com o objetivo de:
-
-✔️ Gerenciar pacientes e profissionais  
-✔️ Realizar agendamentos com validações  
-✔️ Registrar atendimentos médicos  
-✔️ Controlar pagamentos e convênios  
-✔️ Gerar relatórios administrativos  
-✔️ Simular operações reais de uma clínica  
-
----
-
-# 🚀 Tecnologias Utilizadas
-
-| Tecnologia | Finalidade |
-|---|---|
-| Java JDK 21 | Desenvolvimento da aplicação |
-| Terminal / Console | Interface de execução |
-| Git | Controle de versão |
-| GitHub | Hospedagem do projeto |
-
----
-
-# 🧠 Conceitos Aplicados
-
-| Conceito | Aplicação no Projeto |
-|---|---|
-| Sobrecarga de Construtores | Criação flexível de objetos |
-| Sobrecarga de Métodos | Diferentes operações no sistema |
-| Estruturas Condicionais | Validações e regras de negócio |
-| Estruturas de Repetição | Navegação e buscas |
-| Arrays Fixos | Armazenamento de dados |
-| Métodos com Retorno | Processamento de informações |
-| Variáveis Contadoras | Controle dos registros |
-
----
-
-# 📌 Restrições Acadêmicas
-
-O projeto respeita integralmente as restrições propostas pela disciplina.
-
-| Restrição | Status |
-|---|---|
-| Sem Herança | ✅ |
-| Sem Interfaces | ✅ |
-| Sem Classes Abstratas | ✅ |
-| Sem Collections | ✅ |
-| Sem Bibliotecas Externas | ✅ |
-| Sem Encapsulamento | ✅ |
-
-> Os atributos foram mantidos públicos devido às restrições acadêmicas exigidas no projeto.
-
----
-
-# ⚙️ Funcionalidades
-
-## 👤 Pacientes
-- Cadastro simples;
-- Cadastro completo;
-- Atualização de dados;
-- Busca por CPF;
-- Listagem de pacientes.
-
-## 🩺 Profissionais
-- Cadastro de profissionais;
-- Atualização de dados;
-- Controle de especialidades.
-
-## 📅 Consultas
-- Agendamento;
-- Cancelamento;
-- Remarcação;
-- Controle de status.
-
-## 💰 Pagamentos
-- Registro de pagamentos;
-- Controle de convênios;
-- Aplicação de descontos.
-
-## 📊 Relatórios
-- Relatório geral;
-- Relatório por profissional;
-- Controle operacional.
-
----
-
-# 🏗️ Estrutura do Projeto
+### Estrutura principal do projeto
 
 ```bash
 Main.java
